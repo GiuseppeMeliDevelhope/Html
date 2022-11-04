@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+   <link rel="stylesheet" href="form.css">
+    <title>Form Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Registration Form</h1>
+    <hr>
+    <form action="dati.php" method="post">
+      <table>
+        <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" name="email" id="email" placeholder="Enter Email"></td>
+        </tr>
+
+        <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" name="password" id="password" placeholder="Enter Password"></td>
+        </tr>
+
+        <tr>
+        <td><label for="firstname">Firstname:</label></td>
+        <td><input type="text" name="firstname" id="firstname" placeholder="Firstname"></td>
+        </tr>
+        
+        <tr>
+        <td><label for="lastname">Lastname:</label></td>
+        <td><input type="text" name="lastname" id="lastname" placeholder="Lastname"></td>
+        </tr>
+        
+        <tr>
+        <td><label for="birthday">Date of Birth:</label></td>
+        <td><input type="date" name="birthday" id="birthday"></td>
+        </tr>
+
+        <tr>
+          <td><label for="phonenumber">Phone Number:</label></td>
+          <td><input type="number" name="phonenumber" id="phonenumber"></td>
+        </tr>
+
+        <tr>
+          <td><label for="plans">Choose a plan:</label></td>
+          <td>
+            <select name="plans" id="plans" required>
+              <option value="">Seleziona</option>
+              <option value="freeplan">Free plan-0$</option>
+              <option value="initialplan">Initial Plan-9.99$</option>
+              <option value="mediumplan">Medium Plan-19.99$</option>
+              <option value="maxplan">Max Plan-49.99$</option>
+            </select>
+          </td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>
+          <fieldset>
+          <label for="proplan">Pro Plan for only 99.99$</label>
+          <input type="checkbox">
+          </fieldset>
+          </td>
+
+          
+          
+          <td>
+            <fieldset>
+            <label for="">Not interested.</label>
+            <input type="checkbox" checked>
+            </fieldset>
+        </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <fieldset>
+              <legend>Payment</legend>
+              <label for="ccnum">Credit Card Number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" placeholder="352" required>
+              <label for="expdate">Expiration Date</label>
+              <input type="date" id="expdate" name="expdate" required>
+              <br>
+              <br>
+              <br>
+           </fieldset>
+          </td>
+        <td>
+          <fieldset>
+            <legend>Billing Adress</legend>
+            <label for="adress">Adress</label>
+            <input type="text" id="adress" name="adress" placeholder="Via Roma 150" required>
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Palermo" required>
+            <label for="region">Region</label>
+            <input type="text" id="region" name="region" placeholder="Sicilia" required>
+            <label for="cap">CAP</label>
+            <input type="text" id="cap" name="cap" placeholder="92020" required>
+          </fieldset>
+        </td>
+        </tr>
+      </table>
+      
+      <input type="button" name="btn" id="btn" value="Register">
+    
+      
+
+
+            
+        
+        
+        
+       
+        
+
+
+        
+      
+    </form>
+  </body>
+</html>
